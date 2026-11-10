@@ -1,6 +1,11 @@
 # cordova-plugin-gpgs-v2
 This plugin is designed to help coders implement Google Play Games v2 services into Cordova apps. This is ideal for anyone coding with JavaScript with moderate knowledge in Java.
 
+## Requirements
+* Cordova >= 12.0.0
+* Cordova Android >= 14.0.0
+* Android SDK >= 24
+
 ## Installation
 Run Command Prompt as Administrator, or equivalent, navigate to your Cordova project, and type the following command to install the plugin:
 
