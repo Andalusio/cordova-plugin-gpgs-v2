@@ -82,7 +82,7 @@ I may implement updates whenever necessary. For the time-being, you can fund my 
 
 ### PAYPAL
 
-Send a donate of at least $1 to me@omarkaj.com.ng
+Send a donation of at least $1 to me@omarkaj.com.ng
 
 ### PATREON
 
