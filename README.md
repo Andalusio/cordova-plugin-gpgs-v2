@@ -67,3 +67,19 @@ await window.PlayGamesV2.submitScore("CgkI_12345678", 1000);
 // Show a particular leaderboard
 window.PlayGamesV2.showLeaderboard("CgkI_12345678");
 ```
+
+# Funding
+
+I may implement updates whenever necessary. For the time-being, you can fund my work either way:
+
+### PAYPAL
+
+Send a donate of at least $1 to me@omarkaj.com.ng
+
+### PATREON
+
+https://www.patreon.com/c/omarkaj
+
+### BUYMEACOFFEE
+
+https://studio.buymeacoffee.com/omarkaj
