@@ -82,4 +82,4 @@ https://www.patreon.com/c/omarkaj
 
 ### BUYMEACOFFEE
 
-https://studio.buymeacoffee.com/omarkaj
+https://buymeacoffee.com/omarkaj
