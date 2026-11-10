@@ -72,7 +72,7 @@ await window.PlayGamesV2.submitScore("CgkI_12345678", 1000);
 // Show a particular leaderboard
 window.PlayGamesV2.showLeaderboard("CgkI_12345678");
 
-// Show all leaderboard
+// Show all leaderboards
 window.PlayGamesV2.showLeaderboard();
 ```
 
