@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-gpgs-v2",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for Google Play Games Services SDK v2",
+  "cordova": {
+    "id": "cordova-plugin-gpgs-v2",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "google-play-games",
+    "gpgs-v2"
+  ],
+  "author": "Omar Kaj Software",
+  "license": "MIT"
+}

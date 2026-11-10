@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-gpgs-v2"
+        version="1.0.0">
+    <name>Google Play Games V2</name>
+    <description>Google Play Games Services v2 for Cordova</description>
+    <license>MIT</license>
+    <keywords>cordova,playgames,gpgs</keywords>
+
+    <!-- Define the install-time variable -->
+    <preference name="APP_ID" default="0" />
+
+    <js-module src="www/PlayGamesV2.js" name="PlayGamesV2">
+        <clobbers target="window.PlayGamesV2" />
+    </js-module>
+
+    <platform name="android">
+        <preference name="APP_ID" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PlayGamesV2">
+                <param name="android-package" value="ng.com.omarkaj.plugins.gpgs.PlayGamesV2Plugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <!-- Automatically injects the variable into Android's cdv_strings.xml -->
+        <config-file target="app/src/main/res/values/cdv_strings.xml" parent="/resources">
+            <string name="app_id">$APP_ID</string>
+        </config-file>
+
+        <!-- Points Android Manifest metadata to the injected string resource -->
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.android.gms.games.APP_ID"
+                       android:value="@string/app_id" />
+        </config-file>
+
+	<config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.android.gms.version"
+                       android:value="@integer/google_play_services_version" />
+        </config-file>
+
+        <!-- Google Play Games v2 SDK Dependency -->
+        <framework src="com.google.android.gms:play-services-games-v2:+" />
+
+        <source-file src="src/android/PlayGamesV2Plugin.java" target-dir="src/ng/com/omarkaj/plugins/gpgs" />
+    </platform>
+</plugin>
