@@ -61,7 +61,7 @@ window.PlayGamesV2.showAchievements();
 
 # Leaderboards
 ```console
-// Submit player's score to a leaderboard
+// Submit player's score to a particular leaderboard
 await window.PlayGamesV2.submitScore("CgkI_12345678", 1000);
 
 // Show a particular leaderboard
