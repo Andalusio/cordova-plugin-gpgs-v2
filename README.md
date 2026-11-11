@@ -16,7 +16,7 @@ cordova plugin add cordova-plugin-gpgs-v2 --variable APP_ID="your-app-id"
 Alternatively, you can download this plugin as a zip file. Once it's downloaded, open the zip file, unload the root folder into your C drive, then type the following in Command Promot to install:
 
 ```console
-cordova plugin add --link C:\cordova-plugin-gpgs-v2 --variable APP_ID="your-app-id"
+cordova plugin add --link C:\cordova-plugin-gpgs-v2-main --variable APP_ID="your-app-id"
 ```
 
 * your-app-id is your project's "Project ID," which can be found on your Google Play Console. To obtain it there, choose your app, then navigate to the following on the left menu:
