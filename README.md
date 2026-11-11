@@ -49,7 +49,7 @@ function loginToGPG() {
   }
 }
 ```
-The example function above loginToGPG() may also be called on its own without being assigned to a button press event.
+The example function above (i.e loginToGPG()) may also be called on its own without being assigned to a button press event.
 
 
 # Achievements
