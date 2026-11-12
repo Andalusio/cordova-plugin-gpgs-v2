@@ -25,6 +25,8 @@ cordova plugin add --link C:\cordova-plugin-gpgs-v2-main --variable APP_ID="your
 
 # Usage
 
+## Logging In
+
 In order to get the plugin to work, you'll need to initiaize it under "deviceready" first. For example:
 
 ```console
@@ -52,7 +54,7 @@ function loginToGPG() {
 The example function above (i.e loginToGPG()) may also be called on its own without being assigned to a button press event.
 
 
-# Achievements
+## Achievements
 ```console
 // Unlock an Achievement
 window.PlayGamesV2.unlockAchievement("CgkI_ABCDEFG");
@@ -64,7 +66,7 @@ window.PlayGamesV2.incrementAchievement("CgkI_ABCDEFG", 1);
 window.PlayGamesV2.showAchievements();
 ```
 
-# Leaderboards
+## Leaderboards
 ```console
 // Submit player's score to a particular leaderboard
 await window.PlayGamesV2.submitScore("CgkI_12345678", 1000);
