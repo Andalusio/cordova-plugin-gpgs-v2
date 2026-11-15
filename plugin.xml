@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="cordova-plugin-gpgs-v2"
-        version="1.0.0">
+        version="1.0.1">
     <name>Google Play Games V2</name>
     <description>Google Play Games Services v2 for Cordova</description>
     <license>MIT</license>
@@ -33,9 +33,8 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <meta-data android:name="com.google.android.gms.games.APP_ID"
                        android:value="@string/app_id" />
-        </config-file>
-
-	<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<meta-data android:name="com.google.android.gms.games.SUPPRESS_GAME_PROFILE_CREATION"
+                       android:value="true" />
             <meta-data android:name="com.google.android.gms.version"
                        android:value="@integer/google_play_services_version" />
         </config-file>
