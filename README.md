@@ -94,8 +94,8 @@ let loadedData = window.PlayGamesV2.loadGame("primary_save");
 console.log("Loaded game state:", JSON.parse(loadedData));
 
 let parsedState = JSON.parse(loadedData);
-levelVar = parsedState.level || 1; //levelVar set to "1" otherwise.
-coinsVar = parsedState.coins || 0; //coinsVar set to "0" otherwise.
+levelVar = parsedState.level || 1; //levelVar sets to "1" otherwise.
+coinsVar = parsedState.coins || 0; //coinsVar sets to "0" otherwise.
 ```
 
 # Funding
