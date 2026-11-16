@@ -82,6 +82,9 @@ Google Play Games allows for game developers to back up player data onto Google'
 
 ### Saving
 ```console
+var levelVar = 5;
+var coinsVar = 1000;
+
 let gameState = JSON.stringify({ level: levelVar, coins: coinsVar });
 window.PlayGamesV2.saveGame("primary_save", gameState);
 ```
