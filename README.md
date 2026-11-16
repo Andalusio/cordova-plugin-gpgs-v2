@@ -86,11 +86,11 @@ var levelVar = 5;
 var coinsVar = 1000;
 
 let gameState = JSON.stringify({ level: levelVar, coins: coinsVar });
-window.PlayGamesV2.saveGame("primary_save", gameState);
+window.PlayGamesV2.saveGame("my_save_data", gameState);
 ```
 ### Loading
 ```console
-let loadedData = window.PlayGamesV2.loadGame("primary_save");
+let loadedData = window.PlayGamesV2.loadGame("my_save_data");
 console.log("Loaded game state:", JSON.parse(loadedData));
 
 let parsedState = JSON.parse(loadedData);
