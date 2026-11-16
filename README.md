@@ -77,6 +77,23 @@ window.PlayGamesV2.showLeaderboard("CgkI_12345678");
 // Show all leaderboards
 window.PlayGamesV2.showLeaderboard();
 ```
+## Save Data
+Google Play Games allows for game developers to back up player data onto Google's cloud service. The strings being worked on will be in JSON format. Use the following commands for saving and loading data:
+
+### Saving
+```console
+let gameState = JSON.stringify({ level: levelVar, coins: coinsVar });
+window.PlayGamesV2.saveGame("primary_save", gameState);
+```
+### Loading
+```console
+let loadedData = window.PlayGamesV2.loadGame("primary_save");
+console.log("Loaded game state:", JSON.parse(loadedData));
+
+let parsedState = JSON.parse(loadedData);
+levelVar = parsedState.level || 1; //levelVar set to "1" otherwise.
+coinsVar = parsedState.coins || 0; //coinsVar set to "0" otherwise.
+```
 
 # Funding
 
