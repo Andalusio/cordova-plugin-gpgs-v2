@@ -32,7 +32,7 @@ In order to get the plugin to work, you'll need to initiaize it under "devicerea
 ```console
 document.addEventListener('deviceready', async () => {
     await window.PlayGamesV2.initialize();
-    console.log("Google Play Games v2 iinitiated! Proceed to login.");
+    console.log("Google Play Games v2 initiated! You may login from this point.");
 }, false)
 ```
 
